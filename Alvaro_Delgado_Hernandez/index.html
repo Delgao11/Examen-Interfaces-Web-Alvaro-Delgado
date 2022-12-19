@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  
+    <!-- Completa tu nombre -->
+    <title>ALvaro Delgado Hernandez</title>
+
+</head>
+
+<body>
+
+    <!-- Completar html aqui -->
+    <!-- Tabla -->
+
+    <div id="cuadro1">
+        <div class="contenedor-principal">
+            <div class="contenedor">
+                <div class="titulo">
+                    <p class="text text-titulo">Aplicación de dietas</p>
+                </div>
+                <div class="central">
+                    <div class="tabla">
+                        <table class="text-tabla">
+                            <tr class="row-titulo">
+                                <th>Nombre</th>
+                                <th>Sexo</th>
+                                <th>Edad</th>
+                                <th>Altura</th>
+                                <th>Peso</th>
+                                <th>Actividad</th>
+                                <th>IM Basal</th>
+                                <th>Calorias necesarias</th>
+                            </tr>
+                            <tr class="row">
+                                <td>Francisco Romero</td>
+                                <td><span class="etiqueta hombre">hombre</span></td>
+                                <td>31</td>
+                                <td>198</td>
+                                <td>89</td>
+                                <td><span class="etiqueta actividad">moderada</span></td>
+                                <td><span class="cifra">1427</span> kCal</td>
+                                <td><span class="cifra">1712</span> kCal</td>
+                            </tr>
+                            <tr class="row">
+                                <td>Jose Antonio Lara</td>
+                                <td><span class="etiqueta hombre">hombre</span></td>
+                                <td>46</td>
+                                <td>187</td>
+                                <td>85</td>
+                                <td><span class="etiqueta actividad">moderada</span></td>
+                                <td><span class="cifra">1333</span> kCal</td>
+                                <td><span class="cifra">1256</span> kCal</td>
+                            </tr>
+                            <tr class="row">
+                                <td>Jeniffer Lopez</td>
+                                <td><span class="etiqueta mujer">mujer</span></td>
+                                <td>45</td>
+                                <td>167</td>
+                                <td>56</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1256</span> kCal</td>
+                                <td><span class="cifra">1943</span> kCal</td>
+                            </tr>
+                            <tr class="row">
+                                <td> Alberta Gomez Del Rio</td>
+                                <td><span class="etiqueta mujer">mujer</span></td>
+                                <td>19</td>
+                                <td>171</td>
+                                <td>67</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                            <tr class="row">
+                                <td>Alba Maria Pozo</td>
+                                <td><span class="etiqueta mujer">mujer</span></td>
+                                <td>19</td>
+                                <td>152</td>
+                                <td>59</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="boton">
+                        <button  onclick="vercuadro2();">Añadir cliente</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p class="texto-footer">Alvaro Delgado Hernandez©2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Formulario -->
+
+    <div id="cuadro2">
+        <div class="contenedor-principal">
+            <div class="contenedor2">
+                <div class="titulo">
+                    <p class="text text-titulo">Nuevo Cliente</p>
+                </div>
+                <div class="central">
+                    <form id="form">
+                        <div class="inputs">
+                            <div class="input">
+                                <div class="Nombre"></div>
+                                <label>Nombre:</label>
+                                <input type="text" required >
+                            </div>
+                            <div class="input">
+                                <label>Sexo:</label>
+                                <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                                <label>Hombre</label>
+                                <input type="radio" id="mujer" name="sexo" value="mujer" required>
+                                <label>Mujer</label>
+                            </div>
+                            <div class="input">
+                                <label>Edad:</label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Altura (cm):</label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Peso (kg):</label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Actividad fisica:</label>
+                                <select name="actividad" required>
+                                    <option value="0" >Elija una opción</option>
+                                    <option value="suave">Suave o sedentaria</option>
+                                    <option value="moderada" selected>Moderada</option>
+                                    <option value="alta">Alta</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer">
+                    <div class="botones-formulario">
+                        <button class="boton" id="añadircliente"  onclick="validador()" >Añadir Nuevo</button>
+                        <button class="boton" onclick="cerrarcuadro2()" id="volver">Volver Atras</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/app.js"></script>
+
+</body>
+
+</html>

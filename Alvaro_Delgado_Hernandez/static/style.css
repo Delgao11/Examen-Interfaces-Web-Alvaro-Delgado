@@ -1,0 +1,174 @@
+/*# sourceMappingURL=style.css.map */
+.contenedor-principal{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,#666,#cd8b2f, #666);
+    display: flex;
+}
+
+.contenedor{
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    height: 48vh;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px -2px rgb(86, 83, 83);
+    display: flex;
+    flex-direction: column;
+}
+.tabla{
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.texto-tabla th{
+    font-size: 16px;
+    font-family: var(--fuente-titulos);
+}
+table{
+    border: orange 1px solid;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    background-color: #FFF;
+
+}
+table th{
+    height: 20px;
+}
+table td{
+    height: 40px;
+    width: 100px;
+    
+}
+
+table tr:hover td{
+    background-color: orange;
+}
+tr,td{
+    border: orange 2px solid;
+
+}
+:root{
+    --background-negro: black;
+    --fuente-titulos: 'Fredoka One', cursive;
+}
+
+
+.titulo{
+    flex: 1;
+    text-align: center;
+    border-bottom: 3px solid black;
+    
+   
+}
+.text-titulo{ 
+    font-size: 29px;
+    font-family: var(--fuente-titulos);
+}
+
+.central{
+    background-color: white;
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.row-titulo{
+    background-color: orange;
+}
+.footer{
+    flex: 9;
+    text-align: center;
+    border-top: 3px solid black;
+}
+.texto-footer{
+    font-size: 16px;
+    font-family: var(--fuente-titulos);
+}
+
+
+.boton{
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 1%;
+
+}
+.boton button:hover{
+    cursor: pointer;
+}
+.boton button{
+    margin: auto;
+    padding: 1% 4%;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+}
+.etiqueta{
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.hombre{
+    background-color: blue;
+}
+.mujer{
+    background-color: pink;
+}
+.mujer{
+    background-color: pink;
+}
+.actividad{
+    background-color: darkgray;
+}
+.cifra{
+    font-size: 20px;
+}
+ #cuadro2{
+    display: none;
+}
+
+.contenedor2{
+    margin: auto;
+    background-color: white;
+    width: 30%;
+    height: 40vh;
+    border: 2px solid black;
+    box-shadow: 2px -2px #444;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botones-formulario{
+    justify-content: center;
+    display: flex;
+    
+}
+.botones-formulario button{
+    margin: 2% 3%;
+    color: white;
+    padding: 2% 5%;
+    border: none;
+    border-radius: 5px;
+}
+.input{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#añadircliente{
+    background-color: green;
+    border: black 2px solid;
+}
+#volver{
+    background-color: gray;
+}
+form{
+    margin: auto;
+    text-align: center;
+}
